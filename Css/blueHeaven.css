@@ -1,0 +1,104 @@
+  body {
+        margin: 0px 70px 0px 70px;
+      }
+      .banner_img {
+        height: 90px;
+        width: 90px;
+        margin-top: 15px;
+        border: 1px solid red;
+        margin-left: 20px;
+      }
+      #blue_conataner {
+        display: flex;
+        margin: auto;
+      }
+      .content {
+        margin-left: 35px;
+      }
+      .address {
+        display: flex;
+        margin-left: 10px;
+      }
+      .address > p {
+        margin-left: 10px;
+      }
+      .fa-solid,
+      .fa-regular {
+        margin-top: 20px;
+        /* color: rgb(43, 230, 43); */
+      }
+      .line {
+        width: 2px;
+        background-color: black;
+        height: 15px;
+        margin-top: 16px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      .dot {
+        margin-left: -5px;
+      }
+      .star {
+        color: goldenrod;
+        font-size: 15px;
+        margin-left: 5px;
+      }
+      .phone {
+        margin-top: 70px;
+        width: 248px;
+        height: 50px;
+        border: 1px solid #35746b;
+        margin-left: 100px;
+        display: flex;
+        color: #35746b;
+        margin-bottom: 25px;
+        
+      }
+      .call {
+        font-size: 21px;
+        margin-left: 10px;
+        text-align: center;
+        /* margin-bottom: -20x; */
+        padding-bottom: 10px;
+       
+      }
+      .nav {
+        display: flex;
+      }
+      .company_email {
+        width: 250px;
+        height: 40px;
+        border: 1px solid #35746b;
+        color: white;
+        background-color: #35746b;
+        display: flex;
+        margin-left: 13px;
+      }
+      .nav-bar {
+        display: flex;
+        width: 76%;
+        height: 40px;
+        border: #35746b solid 1px;
+        background-color: #eaeaf4;
+        font-size: 20px;
+      }
+      .bTAG {
+        margin-left: 70px;
+        display: block;
+        padding-top: 10px;
+      }
+      .home {
+        width: 190px;
+        background: #2d3192;
+      }
+      .send {
+        font-size: 21px;
+        margin-left: 10px;
+        margin-top: -10px;
+      }
+
+      .thunb{
+          height: 30px;
+          width: 30px;
+          margin-top: 10px;
+      }

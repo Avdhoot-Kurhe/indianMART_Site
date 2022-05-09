@@ -1,0 +1,46 @@
+#top {
+  text-align: center;
+  margin-top: 50px;
+}
+#bottom {
+  color: #444444;
+  font-family: Arial;
+  line-height: 25px;
+
+
+  font-size: 18px;
+}
+#read {
+  color: blue;
+}
+#container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  gap: 20px;
+}
+
+#container > div > div {
+  height: auto;
+  display: flex;
+}
+#container img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+#container > div > div > div {
+  /* height: auto; */
+  margin-left: 5px;
+  line-height: 3px;
+}
+.first {
+  font-size: 18px;
+  color: #777777;
+}
+
+.second {
+  color: #111111;
+  font-family: Arial;
+  font-size: 20px;
+}
