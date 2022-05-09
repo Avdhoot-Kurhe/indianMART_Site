@@ -1,0 +1,106 @@
+#parent{
+    border: 0px solid;
+    height:500px;
+    width:100%;
+    background-color: rgb(249, 252, 255);
+    margin: 35px;
+    
+}
+#childfirst{
+    grid-template-columns: repeat(3, 300px);
+    gap: 1px;
+    display: grid;
+    height: 50px;
+    padding-top: 4%;
+    /* margin-left: -10px; */
+
+}
+.a{
+    border: 0px solid red;
+    height: 50px;
+    width: 200%;
+    margin-left: 200%;
+    display: flex;
+    margin-top: 5%;
+    
+}   
+#ss{
+    margin-top: 1%;
+    margin-left: 12%;
+    font-size:1.2em;
+    font-weight:bold;
+}
+    
+.Icon_img{
+    gap:50%;
+    margin-left: 20%;
+    
+}
+    
+
+#s{
+margin-top: 1%;
+margin-left: 5%;
+font-size:1.2em;
+font-weight:bold;
+}
+
+
+
+.hv{
+    margin-left:25%;
+    border: 0px solid palevioletred;
+    width: 453%;
+    height: 60px;
+    color: blue;
+    background-color: rgb(241, 241, 247);
+}
+#childsecond{
+    display: grid;
+    grid-template-columns: repeat(5,300px);
+    gap: 5px;
+    justify-content: space-around;
+    padding: 10%;
+    margin-left: 10%;
+    margin-top: -9%;
+}
+.b{
+    border: 0px solid rgb(55, 0, 255);
+    height: 190px;
+    width: 75%;
+    padding-top: 10%;
+   
+}
+.b>a{
+    color:#666;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 30px;
+    
+
+}
+.b>a:hover{
+    color: blue;
+}
+.a>a>img{
+    height:65%;
+    transition: transform 2s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 75%;
+
+}
+.a>a>img:hover{
+    background-color: red;
+    transform:translate(20px);
+}
+.copy{
+    display: flex;
+}
+.copy>p{
+    margin-left: 5%;
+    margin-top: -2%;
+    color: #666;
+}
+#para{
+    margin-left: 40%;
+}

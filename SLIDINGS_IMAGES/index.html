@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="product">
+        <div class="container-fluid">
+            <div class="slider-wrap">
+              <div class="slider-main" id="slider-main">
+                 <div class="item">
+                <div class="text">
+                    <img src="https://3.imimg.com/data3/US/UJ/MY-3792183/lip-balm-250x250.jpg">
+            <div class="second"><a href="lipBam.html">Lip Bam</a>
+            </div>
+                </div>
+                 </div>
+
+                 <div class="item">
+                    <div class="text">
+                        <img src="https://3.imimg.com/data3/RK/XF/MY-3792183/01-250x250.jpg">
+            
+            <div class="second"><a href="lipGloss.html">Lip Gloss</a>
+                </div>
+                    </div>
+                     </div>
+
+                     <div class="item">
+                        <div class="text">
+                            <img style="height:90px;margin-top:20%;"src="https://3.imimg.com/data3/ML/RO/MY-3792183/mascara-250x250.jpg">
+                           <div class="swatis"><a href="mascara.html">Mascara</a>
+                            </div>
+                        </div>
+                         </div>
+
+                         <div class="item">
+                            <div class="text">
+                                 <img src="https://3.imimg.com/data3/BK/MD/MY-3792183/01-250x250.jpg">
+                               <div class="second"><a href="nailEnamel.html">Nail Enamel</a>
+                                </div>
+                            </div>
+                             </div>
+
+                             <div class="item">
+                                <div class="text">
+                                    <img style="height:85px;margin-top:10%;"src="https://3.imimg.com/data3/WJ/EO/MY-3792183/01-250x250.jpg">
+                                    <div class="seco"><a href="sindoor.html">Sindoor</a>
+                                    </div>
+                                </div>
+                                 </div>
+                                 <div class="item">
+                                    <div class="text">
+                                        <img src="https://3.imimg.com/data3/BX/CS/MY-3792183/foundation-250x250.jpg">
+                                        <div class="seconds"><a href="foundation.html">Foundation</a>
+                                        </div>
+                                    </div>
+                                     </div>
+                                     <div class="item">
+                                        <div class="text">
+                                            <img src="https://3.imimg.com/data3/NL/QG/MY-3792183/fruit-bleach-250x250.jpg">
+                                            <div class="second"><a href="fruitBleech.html">Fruit Bleech</a>
+                                            </div>
+                                        </div>
+                                         </div>
+                                         <div class="item">
+                                            <div class="text">
+                                                <img src="https://3.imimg.com/data3/QC/FL/MY-3792183/fairness-scrub-250x250.jpg">
+                                                <div class="secondss"><a href="fairnessScrub.html">Fairness Scrub</a>
+                                                </div>
+                                            </div>
+                                             </div>
+
+              </div>
+            </div>
+
+        </div>
+        
+        <span class="arrow prev" onclick="prev()"> &#10094;</span>
+        <span class="arrow next" onclick="next()"> &#10095;</span>
+        </div>
+    </section>
+</body>
+</html>
+
+<script>
+    var sliderMain=document.getElementById("slider-main");
+    var item=sliderMain.getElementsByClassName("item");
+
+    function next()
+    {
+        sliderMain.append(item[0]);
+    }
+    function prev()
+    {
+        sliderMain.prepend(item[item.length-1])
+    }
+    // var array=["1","2","3","4","5","6"];
+    // console.log(array[array.length-1]);
+
+
+    // var counter=1;
+    // setInterval(function()
+    // {
+    //     document.getElementById("item"+counter).checked=true;
+    //     counter++;
+    //     if(counter>8){
+    //         counter=1;
+    //     }
+    // },5000);
+    
+</script>

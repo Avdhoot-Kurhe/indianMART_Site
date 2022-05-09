@@ -1,0 +1,280 @@
+.slider-wrap{
+    position:relative;
+    overflow: hidden;
+    height: 260px;
+    margin-left:8%;
+    margin-top: 5%;
+   
+}
+.slider-main{
+    position: absolute;
+    /* animation: scroll 40s linear infinite; */
+    
+}
+.slider-main:hover{
+    animation-play-state: paused;
+}
+.slider-main::before,.slider-main::after{
+    content: "";
+    z-index: 2;
+}
+.slider-main::before{
+    top:0;
+    left: 0;
+}
+.slider-main::after{
+    top:0;
+    right: 0;
+transform: rotate(180deg);
+}
+.slider-wrap .slider-main{
+    width:(calc(150px *16));
+    animation:scroll 40s infinite linear;
+
+}
+
+.item{
+    width:300px;
+    display: inline-block;
+    background-color: white;
+    height: 260px;
+    position: relative;
+    border: 0px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-content: space-between;
+    margin-left: 4px;
+    
+
+
+    
+    
+}
+
+@keyframes scroll{
+    0%
+    {
+        transform:translateX(0);
+    }
+    100%
+    {
+        transform:translateX(cal(-150px*8));
+    }
+}
+
+.text>img{
+    margin-top: -5%;
+    height: 195px;
+    transition: transform 0.5s;
+}
+.text>img:hover{
+transform:translate(20px);
+}
+.text{
+    position: absolute;
+    top:50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: bold;
+    left: 50%;
+}
+.btn-area{
+    position: absolute;
+    bottom: 6px;
+    left: 30%;
+    top: 30%;
+
+}
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 63%;
+    color: black;
+    background-color:white;
+    padding: 8px 20px;
+    margin-left: -5%;
+    margin-right: -3%;
+    border-radius: 40%;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: blue;
+    transition: transform 1s;
+
+}
+.arrow:hover{
+    background-color:#333333DB;
+    color: chartreuse;
+    
+transform:translate(20px);
+}
+.next{
+   right:138px;
+}
+.prev{
+    left: 10%;
+}
+.swatis{
+    width:200px;
+    border: 0px solid blue;
+    background-color:#333333DB;
+    margin-top: 32%;
+    width: 165%;
+    margin-left: -33%;
+    height: 58px;
+    
+
+}
+.swatis>a{
+    color: white;
+    text-align:center;
+    margin-left: 40%;   
+    text-decoration: none;
+
+
+}
+.swatis>a:before{
+    background-color: red;
+    content:"";
+    position: absolute;
+    bottom:-10px;
+    height: 4px;
+    width: 0%;
+    left: 0%;
+    top: 85%;
+}
+.swatis>a:hover:before{
+    width:80%;
+    left: 15%;
+}
+.swatis>a:hover{
+    color: red;
+}
+.Slider_second{
+    text-align: center;
+    background-color:#333333DB;;
+    color: antiquewhite;
+    border:0px solid blue;
+    width: 173%;
+    margin-left: -38%;
+    height: 60px;
+    transition: transform 1s;
+
+}
+.Slider_second>a{
+    color: white;
+    text-decoration: none;
+
+}
+.Slider_second>a:before{
+    background-color: red;
+    content:"";
+    position: absolute;
+    bottom:-10px;
+    height: 4px;
+    width: 0%;
+    left: 0%;
+    top: 85%;
+}
+.Slider_second>a:hover:before{
+    width:80%;
+    left: 10%;
+}
+.Slider_second>a:hover{
+    color: red;
+    width: 100px;
+    
+transform:translate(20px);
+}
+.seco{
+    width: 120%;
+    margin-top:30%;
+    text-align: center;
+    background-color:#333333DB;
+    padding-left:-10%;
+    margin-left: -10%;
+    height: 62px;;
+}
+.seco>a{
+    color: white;
+    text-decoration: none;
+
+}
+.seco>a:before{
+    background-color: red;
+    content:"";
+    position: absolute;
+    bottom:-10px;
+    height: 4px;
+    width: 0%;
+    left: 0%;
+    top: 85%;
+}
+.seco>a:hover:before{
+    width:50%;
+    left: 25%;
+}
+.seco>a:hover{
+    color: red;
+}
+.seconds{
+    width:255%;
+    margin-left: -78%;
+    height: 60px;
+    background-color:#333333DB;
+    text-align: center;
+}
+.seconds>a{
+    color: white;
+    text-decoration: none;
+    
+
+}
+.seconds>a:before{
+    background-color: red;
+    content:"";
+    position: absolute;
+    bottom:-10px;
+    height: 4px;
+    width: 0%;
+    left: 0%;
+    top: 85%;
+}
+.seconds>a:hover:before{
+    width:80%;
+    left: 10%;
+}
+.seconds>a:hover{
+    color: red;
+}
+.secondss{
+    width:232%;
+    margin-left: -65%;
+    height: 60px;
+    background-color:#333333DB;
+    text-align: center;
+}
+.secondss>a{
+    color: white;
+    text-decoration: none;
+    margin-top: 5%;
+
+}
+.secondss>a:hover{
+    color: red;
+}
+.secondss>a:before{
+    background-color: red;
+    content:"";
+    position: absolute;
+    bottom:-10px;
+    height: 4px;
+    width: 0%;
+    left: 0%;
+    top: 85%;
+}
+.secondss>a:hover:before{
+    width:100%;
+    left: 2%;
+}
