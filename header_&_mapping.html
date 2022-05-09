@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Css/styles.css" />
+   <link rel="stylesheet" href="Css/about.css">
+   <link rel="stylesheet" href="Footer/footer.css">
+   <link rel="stylesheet" href="SLIDINGS_IMAGES/slider.css">
+   <link rel="stylesheet" href="CSS/blueHeaven.css">
+<style>
+     .gettouch{
+            background-color: #1A237E;
+            color: whitesmoke;
+            
+        }
+        #touchbox{
+            display: flex;
+            /* margin-left: 10px; */
+            gap: 10%;
+            /* border: 1px solid; */
+        }
+        #dv1{
+            /* margin-left: 0PX; */
+            width: 33%;
+        }
+        .tle{
+          background-color: teal;
+          border: 0;
+          color: white;
+          font-size: 16px;
+        }
+        .brtle{
+          color: teal;
+          border: 1px solid teal;
+          font-size: 16px;
+        }
+        #inpt{
+          margin-bottom: 20px;
+        }
+        #topsupplier{
+             display: flex;
+             
+             /* padding: 20px; */
+        }
+        #topsupplier > div{
+          margin-left: 3%;
+          /* border: 1px solid; */
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          padding: 30px;
+        }
+        .blu{
+          color: blue;
+        }
+        .tel{
+          color: teal;
+        }
+        #topsupplier > div > div > button{
+          background-color: teal;
+          color: white;
+          font-size: 16px;
+        }
+        #topsupplier > div > img{
+          height: 300px;
+          width: 200px;
+          margin-left: 50px;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          
+        }
+        #topsupplier > div > div{
+          text-align: center;
+          line-height: 15px;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        #topsupplier > div:hover{
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+        #reltd   {
+         display: grid;
+         gap: 1.5%;
+         row-gap:25px ;
+         grid-template-columns: repeat(3,32%);
+
+        }
+        #reltd > div{
+          display: flex;
+          /* border: 1px solid; */
+          gap: 15px;
+          padding: 10px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #reltd > div > div >img{
+          width: 200px;
+          height: 200px;
+        }
+        #reltd > div > div > h3{
+          margin-top: 90px;
+          margin-left: 50px;
+        }
+        #FeatureRec {
+          display: flex;
+        }
+        #FeatureRec > div > img{
+          height: 300px;
+          width: 200px;
+          margin-left: 50px;
+          
+        }
+        #FeatureRec > div > img{
+          height: 300px;
+          width: 200px;
+          margin-left: 50px;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          
+        }
+        #FeatureRec > div > div{
+          text-align: center;
+          line-height: 15px;
+        }
+        #FeatureRec > div > div > button{
+          background-color: teal;
+          color: white;
+          font-size: 16px;
+        }
+        #FeatureRec > div:hover{
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+        #FeatureRec > div{
+          margin-left: 3%;
+          /* border: 1px solid; */
+          padding: 30px;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        #slide{
+          display: flex;
+        }
+        #slide >div{
+          width: 25%;
+          height: 350px;
+          /* border: 1px solid; */
+          margin: 10px;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+        }
+        #slide :hover{
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #slide >div >img{
+           height: 250px;
+           width: 250px;
+           margin-left: 50px;
+        }
+        #slide >div >div{
+           height: 100px;
+           /* margin-left: 100px; */
+           margin-top: 50px;
+        }
+        #slide >div >div >button{
+          background-color: teal;
+          width: 100%;
+          height: 50px;
+          color: whitesmoke;
+          font-size: 25px;
+        }
+        #PRid{
+          color: red;
+        }.header{
+          margin:auto;
+        }
+        body{
+          width: 90%;
+          margin: auto;
+        }
+        #prod{
+          margin-left: 150px;
+            width: 500px;
+            display: flex;
+            color: white;
+            justify-content: space-between;
+    
+        }
+        #prod>div{
+            margin-left:5px;
+            margin: auto;
+            text-align: center;
+        }
+        #prod>div>img{
+            height: 50px;
+            width:50px;
+        }
+        #prod>div>p{
+            font-size: 10px;
+            color: white;
+            text-align: center;
+            padding-top: -5px;
+        }
+        .Hd_logo{
+        background-image: url(https://utils.imimg.com/globalhf/hrd-sp-v30.png);
+        background-repeat:no-repeat;
+        height: 50px;
+        width:220px;
+        }
+        a{
+          color: white;
+          text-decoration: none;
+        }
+
+        </style>
+
+</head>
+<body>
+    <div class="header">
+      <a href="index.html" class="Hd_logo"></a>
+        <div id="searchBar">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWPIW4zsVRjJhQNkaXkmya8tq2Af6Qvg1dTw&usqp=CAU/">
+            <select id="loc">
+                <option value="all india" >All India</option>
+                <option value="delhi">Delhi</option>https://hm.imimg.com/imhome_gifs/indiamart-og1.jpg
+                <option value="mumbai">Mumbai</option>
+                <option value="kolkata">Kolkata</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="indore">Indore</option>
+            </select>
+            <form id="form" style="display: flex;">
+                <input id="textsearch" type="text"  placeholder="Enter product / service to search" size="35">
+                <input type="submit" value="🔍Search" id="searchBtn"></input>
+            </form> 
+        </div>  
+        <div id="prod">
+          <div> 
+            <img src="https://cdn-icons-png.flaticon.com/512/4379/4379655.png" alt="" class="log">
+            <a href="Footer/Shoping.html"><p>IM Shoping</p></a>
+        </div>
+        <div> 
+            <img src="https://cdn-icons-png.flaticon.com/512/861/861377.png" alt="">
+            <a href="Footer/Covid Supplies.html"><p>Covid Supplies</p></a>
+        </div>
+        <div> 
+            <img src="https://cdn-icons-png.flaticon.com/512/602/602275.png" alt="">
+            <a href="Footer/sell.html"><p>Sell</p></a>
+        </div>
+        <div> 
+            <img src="https://cdn-icons-png.flaticon.com/512/6996/6996219.png" alt="">
+            <a href="Footer/help.html"><p>Help</p></a>
+            
+        </div>
+        <div> 
+            <img src="https://cdn-icons-png.flaticon.com/512/2950/2950657.png" alt="">
+            <a href="Footer/msg.html"><p>Massages</p></a>
+            
+        </div>
+        <div> 
+            <!-- <img src="https://cdn-icons.flaticon.com/png/128/5655/premium/5655237.png?token=exp=1651641280~hmac=66a04f0d0aae21e7016f2b57f197e265" alt="">
+            <a href="login.html"><p>Sign In ˅</p></a> -->
+            
+        </div>
+        </div>
+    </div>
+    
+    <button id="GotoCart"><a href="indiaMartCart.html">Go TO CART</a></button>
+
+  
+    <div id="blue_conataner">
+        <div class="banner_img" >
+          <img 
+            src="https://3.imimg.com/data3/HJ/OY/MY-3792183/blue-heaven-cosmetics-private-limited-logo-120x120.jpg"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <h2>Blue Heaven Cosmetics (P) Ltd</h2>
+          <div class="address">
+            
+                <img class="thunb" src="data:image/png;base64,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" alt="">
+            <p>Kirti Nagar, New Delhi, Delhi</p>
+            <div class="line"></div>
+            
+             <img class="thunb" src="data:image/png;base64,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"/>
+            <p style="color: gray">GST</p>
+            <p>07AACCB1155C1ZB</p>
+            <div class="line"></div>
+          
+                <img class="thunb" src="data:image/png;base64,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"/>
+            <p style="color: gray">Verified</p>
+            <p style="color: black">Supplier</p>
+            <div class="line"></div>
+                <img class="thunb" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSjTDPTVFqrmYHi3HPl4F-31Cq2Fit1bzCQg&usqp=CAU"/>
+            <p>4.2</p>
+            <p class="dot">/5</p>
+            <div class="star"><p class="star">★★★★★</p></div>
+          </div>
+        </div>
+        <div class="phone">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3OZy2ezSM9i0CjA_sqUhULhcahxWEiE33tQ&usqp=CAU"/>
+          <p class="call">Call-8048361220</p>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="nav-bar">
+          <div class="home"><b>Home</b></div>
+          <div><b class="bTAG">Product & services</b></div>
+          <div><b class="bTAG">About Us</b></div>
+          <div><b class="bTAG">Contact Us</b></div>
+        </div>
+        <div class="company_email">
+          <div style="margin-left: 50px">
+            <i class="fa-solid fa-envelope fa-xl"></i>
+          </div>
+          <div class="send"><p>Send Email</p></div>
+        </div>
+      </div>
+    
+    <!-- SLIDER SECTION -->
+
+    <section class="product">
+        <div class="container-fluid">
+            <div class="slider-wrap">
+              <div class="slider-main" id="slider-main">
+                 <div class="item">
+                <div class="text">
+                    <img src="https://3.imimg.com/data3/US/UJ/MY-3792183/lip-balm-250x250.jpg">
+            <div class="Slider_second"><a href="lipBam.html">Lip Bam</a>
+            </div>
+                </div>
+                 </div>
+
+                 <div class="item">
+                    <div class="text">
+                        <img src="https://3.imimg.com/data3/RK/XF/MY-3792183/01-250x250.jpg">
+            
+            <div class="Slider_second"><a href="lipGloss.html">Lip Gloss</a>
+                </div>
+                    </div>
+                     </div>
+
+                     <div class="item">
+                        <div class="text">
+                            <img style="height:90px;margin-top:20%;"src="https://3.imimg.com/data3/ML/RO/MY-3792183/mascara-250x250.jpg">
+                           <div class="swatis"><a href="mascara.html">Mascara</a>
+                            </div>
+                        </div>
+                         </div>
+
+                         <div class="item">
+                            <div class="text">
+                                 <img src="https://3.imimg.com/data3/BK/MD/MY-3792183/01-250x250.jpg">
+                               <div class="Slider_second"><a href="nailEnamel.html">Nail Enamel</a>
+                                </div>
+                            </div>
+                             </div>
+
+                             <div class="item">
+                                <div class="text">
+                                    <img style="height:85px;margin-top:10%;"src="https://3.imimg.com/data3/WJ/EO/MY-3792183/01-250x250.jpg">
+                                    <div class="seco"><a href="sindoor.html">Sindoor</a>
+                                    </div>
+                                </div>
+                                 </div>
+                                 <div class="item">
+                                    <div class="text">
+                                        <img src="https://3.imimg.com/data3/BX/CS/MY-3792183/foundation-250x250.jpg">
+                                        <div class="seconds"><a href="foundation.html">Foundation</a>
+                                        </div>
+                                    </div>
+                                     </div>
+                                     <div class="item">
+                                        <div class="text">
+                                            <img src="https://3.imimg.com/data3/NL/QG/MY-3792183/fruit-bleach-250x250.jpg">
+                                            <div class="Slider_second"><a href="fruitBleech.html">Fruit Bleech</a>
+                                            </div>
+                                        </div>
+                                         </div>
+                                         <div class="item">
+                                            <div class="text">
+                                                <img src="https://3.imimg.com/data3/QC/FL/MY-3792183/fairness-scrub-250x250.jpg">
+                                                <div class="secondss"><a href="fairnessScrub.html">Fairness Scrub</a>
+                                                </div>
+                                            </div>
+                                             </div>
+
+              </div>
+            </div>
+
+        </div>
+        
+        <span class="arrow prev" onclick="prev()"> &#10094;</span>
+        <span class="arrow next" onclick="next()"> &#10095;</span>
+        </div>
+    </section>
+
+    <!-- ABOUT Section -->
+    <div id="top"> 
+        <h2>About Us</h2>
+     <p id="bottom">Blue Heaven Cosmetics was started in 1974 by two young brothers, company MD's Mr.Charanjit Singh and Mr. Gurnam Singh with big dreams and ambitions. <br>
+         By virtue of their determination and commitment Blue Heaven Cosmetics has been able to experience such an eventful journey revolutionizing the Indian decorative <br> cosmetics industry.</p>
+         <div id="read">+Read more</div>
+ 
+    </div>
+         <div id="container">
+             <div>
+                 <div>
+                     <div><img src="https://i.postimg.cc/tgJyBXDj/Screenshot-2022-02-24-at-12-17-17-PM.png" alt=""></div>
+                    <div>
+                     <p class="first">Nature of Business</p>
+                     <p class="second">Exporter and Manufacturer</p>
+                    </div>  
+                 </div>
+             </div>
+             <div>
+                 <div>
+                     <div><img src="https://i.postimg.cc/Tw98V1WG/Screenshot-2022-02-24-at-10-23-37-PM.png" alt=""></div>
+                    <div>
+                     <p class="first">Year of Establishment</p>
+                     <p class="second">1974</p>
+                    </div>    
+                 </div>
+             </div>
+             <div>
+                <div>
+                 <div>
+                     <img src="https://i.postimg.cc/0j2TcvpS/Screenshot-2022-02-24-at-10-23-46-PM.png" alt="">
+                 </div>
+                 <div>
+                   <p class="first">Legal Status of Firm</p>
+                   <p class="second">Limited Company</p>
+                   <p class="second">(Ltd./Pvt.Ltd.)</p>
+                 </div>
+                </div>
+             </div>
+             <div>
+                  <div>
+                     <div>
+                         <img src="https://i.postimg.cc/HxHD8XnB/Screenshot-2022-02-24-at-10-23-56-PM.png" alt="">
+                     </div>
+                     <div>
+                         <p class="first">Annual Turnover</p>
+                         <p class="second">Rs. 50 - 100 Crore</p>
+                     </div>
+                  </div>
+             </div>
+             <div>
+                
+             </div>
+             <div>
+                 <div>
+                     
+                        <div>
+                            <img src="https://i.postimg.cc/gjxX7N62/Screenshot-2022-02-24-at-11-30-46-PM.png" alt="">
+                        </div>
+                         <div>
+                             <p class="first">Import Export Code (IEC)</p>
+                             <p class="second">05040*****</p>
+                         </div>
+                     
+                 </div>
+             </div>
+             <div>
+                 <div>
+                     <div>
+                         <img src="https://i.postimg.cc/8CLgCtp7/Screenshot-2022-02-24-at-10-24-04-PM.png" alt="">
+                     </div>
+                     <div>
+                         <p class="first">GST Number</p>
+                         <p class="second">07AACCB1155C1ZB</p>
+                     </div>
+                 </div>
+             </div>
+             <div>
+                
+             </div>
+         </div>
+<!-- Product & services section -->
+    <h1 id="h1_product">Products & Services</h1>
+    <div id="productSevices">
+    </div>
+
+
+
+    <div >
+        <div class="gettouch">
+            <h1 style="padding: 13px; margin-left: 30px;">Get in touch with us</h1>
+       </div>
+       <div id="touchbox">
+        <div id="dv1" style="margin-left: 100px;">
+            <h3>Our Company</h3>
+            <p>About Us</p>
+            <p>Products & Services</p>
+            <p>Contact Us</p>
+            <p>Sitemap</p>
+            <p>Download Brochure</p>
+        </div>
+        <div id="dv1">
+            <h3>Reach Us</h3>
+            <h1>Blue Heaven Cosmetic(P) Ltd</h1>
+            <P>No.39, DLF Industrial Area, Kirti Nagar, New Delhi-110019,India</P>
+            <P>Arvind Srivastav(Manager)</P>
+            <P style="color: teal;">View Mobile Number</P>
+            <P style="color: green;">37% Call Response Rate</P>
+            <div>
+                <button class="tle">Send SMS</button>
+                <button class="brtle">Send Email</button>
+            </div>
+        </div>
+        <div id="dv1">
+            <h1 style="line-height: 15px;">Leave a Message, </h1>
+            <h3>we will call you back</h3>
+            <input type="number" id="inpt" placeholder="Enter your mobile" style="width: 50%;">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Additional details about your requirment......"></textarea>
+            <button class="tle">Submit Requirment</button>
+        </div>
+       </div>
+       </div>
+      <h1 style="margin-left: 2%;">Related Products from Top Suppliers</h1>
+     <div id="topsupplier">
+       <div>
+         <img  
+         src="https://5.imimg.com/data5/YI/TI/EP/SELLER-29822611/nice-and-naughty-matte-lipstick-250x250.jpg" alt="">
+         <div>
+          <h3 class="blu">Waterproof Lipstick</h3>
+          <h2>Rs 270</h2>
+          <h5>Power Agrotech</h5>
+          <p>Civil Lines, New Delhi, Delhi, India</p>
+          <h2 class="tel">View Mobile Number</h2>
+          <button>Contact Supplier</button>
+         </div>
+         
+       </div>
+       <div>
+        <img 
+        src="https://5.imimg.com/data5/ANDROID/Default/2021/7/BX/ID/RR/39626519/product-jpeg-250x250.jpg" alt="">
+        <div>
+          <h3 class="blu">5 in 1 lipstick</h3>
+          <h2>Rs 199/ </h2>
+          <h5>Ray Cosmetic</h5>
+          <p>Delhi, India</p>
+          <h2 class="tel">View Mobile Number</h2>
+          <button>Contact Supplier</button>
+         </div>
+       </div>
+       <div>
+        <img src="https://5.imimg.com/data5/FG/PI/VY/ANDROID-82406429/1561483856168-jpg-250x250.jpg" alt="">
+        <div>
+          <h3 class="blu">Dry matt lipstick</h3>
+          <h2>Rs 180</h2>
+          <h5>Raj Indian Colour Cosmetic</h5>
+          <p>Delhi, India</p>
+          <h2 class="tel">View Mobile Number</h2>
+          <button>Contact Supplier</button>
+         </div>
+       </div>
+       <div>
+        <img src="https://5.imimg.com/data5/LK/IN/YE/SELLER-15721794/huda-beauty-creamy-matte-lipstick-for-personal-250x250.jpg" alt="">
+        <div>
+          <h3 class="blu">Beauty Creamy Matte Lipstick </h3>
+          <h2>Rs 799</h2>
+          <h5>Anjali Enterprises</h5>
+          <p>New Delhi, Delhi, India</p>
+          <h2 class="tel">View Mobile Number</h2>
+          <button>Contact Supplier</button>
+         </div>
+       </div>
+     </div>
+     <h1 style="margin-top: 70px; margin-left: 50px;">Related Categories</h1>
+     <div id="reltd">
+       <div >
+          <div>
+          <img src="https://3.imimg.com/data3/EP/VJ/GLADMIN-105850/cosmetics-250x250.jpg" alt="">
+          </div>
+          <div><h3>Cosmetics</h3></div>
+       </div>
+        <div>
+         <div>
+          <img src="https://3.imimg.com/data3/TT/GW/GLADMIN-21908/beauty-cosmetics-250x250.jpg" alt="">
+         </div>
+         <div><h3>Beauty Cosmetics</h3></div>
+       </div>
+        <div>
+        <div>
+          <img src="https://3.imimg.com/data3/KG/HH/GLADMIN-11601/lip-balm-250x250.jpg" alt="">
+         </div>
+         <div><h3>Lip Balm</h3></div>
+       </div>
+        <div>
+         <div>
+         <img src="https://5.imimg.com/data5/ZB/JY/DJ/GLADMIN-68087/matte-lipstick-250x250.png" alt="">
+         </div>
+         <div><h3>Matte Lipstick</h3></div></div>
+       <div>
+         <div>
+         <img src="https://5.imimg.com/data5/JM/OT/KQ/GLADMIN-68087/cosmetic-third-party-manufacturing-250x250.jpg" alt="">
+         </div>
+         <div><h3>Cosmetic Third Party Manufacturing</h3></div>
+       </div>
+       <div>
+         <div>
+          <img src="https://3.imimg.com/data3/XW/DH/GLADMIN-32202/lip-gloss-250x250.jpg" alt="">
+         </div>
+         <div><h3>Lip Gloss</h3></div>
+       </div>
+     </div>
+     <h1 style="margin-top: 70px; margin-left: 50px;">Featured Recommendations</h1>
+     <div id="FeatureRec">
+       <div>
+       <img src="https://5.imimg.com/data5/TE/IH/KD/SELLER-681010/double-basket-deep-fryer-250x250.jpg" alt=""> 
+       <div>
+        <h3 class="blu">Double Basket Deep fryer</h3>
+        <h4>Rs 2100</h4>
+        <h3>Janshakti Industies</h3>
+        <p>Ahmedabad, Gujrat</p>
+        <button>Contact Supplier</button>
+       </div>
+       </div>
+       <div>
+        <img src="https://5.imimg.com/data5/SELLER/Default/2021/10/ED/EF/NB/2251978/df-8-l-s-digi-250x250.jpg" alt=""> 
+        <div>
+         <h3 class="blu">AKASH Indian Digital fryer</h3>
+         <h4>Rs 13900</h4>
+         <h3>Akash International</h3>
+         <p>New Delhi, Delhi</p>
+         <button>Contact Supplier</button>
+        </div>
+       </div>
+       <div>
+        <img src="https://5.imimg.com/data5/EQ/KQ/MY-12918121/broasted-chicken-fryer-250x250.jpg" alt=""> 
+        <div>
+         <h3 class="blu">Computer Control Fat Fryer</h3>
+         <h4>Rs 55000</h4>
+         <h3>Coolex Industries Private Limited</h3>
+         <p>Vijayawada, Andhra Pradesh</p>
+         <button>Contact Supplier</button>
+        </div>
+       </div>
+       <div>
+        <img src="https://5.imimg.com/data5/EQ/KQ/MY-12918121/broasted-chicken-fryer-250x250.jpg" alt=""> 
+        <div>
+         <h3 class="blu">Computer Control Fat Fryer</h3>
+         <h4>Rs 55000</h4>
+         <h3>Coolex Industries Private Limited</h3>
+         <p>Vijayawada, Andhra Pradesh</p>
+         <button>Contact Supplier</button>
+        </div>
+       </div>
+     </div>
+     <hr><br><br>
+</body>
+</html>
+<script>
+    var data = [
+    {
+              name: "Lipstick",
+              size: "Baked Brick Lipstick",
+              price: "440",
+              img:"https://4.imimg.com/data4/QY/OX/GLADMIN-3792183/1-250x250.jpg",
+          },
+          {
+              name: "Makeup",
+              size: "Foundation",
+              price: "84",
+              img:"https://3.imimg.com/data3/BX/CS/MY-3792183/foundation-250x250.jpg",
+          },
+          {
+              name: "Lip Product",
+              size: "Lip Glows",
+              price: "105",
+              img:"https://3.imimg.com/data3/RK/XF/MY-3792183/01-250x250.jpg",
+          },
+          {
+              name: "Bleach Cream",
+              size: "Frout Bleach",
+              price: "79",
+              img:"https://3.imimg.com/data3/NL/QG/MY-3792183/fruit-bleach-250x250.jpg",
+          },
+          {
+              name: "Scrub",
+              size: "Fairness Scrub",
+              price: "208",
+              img:"https://3.imimg.com/data3/QC/FL/MY-3792183/fairness-scrub-250x250.jpg",
+          }
+    ]
+
+
+
+    let parent = document.getElementById("productSevices");
+
+function showProduct(){
+data.forEach(function(product){
+let divs = document.createElement("div")
+ divs.id = "prod1"
+
+let img = document.createElement("img")
+   img.id = "imid"
+img.src=product.img
+
+let pr_price = document.createElement("p")
+pr_price.id = "PRid"
+pr_price.textContent = product.price
+
+let pr_name = document.createElement("p")
+pr_name.id = "NMid"
+pr_name.textContent = product.name
+
+let size_name = document.createElement("p")
+size_name.id = "SZid"
+size_name.textContent = product.size
+
+let cart_btn = document.createElement("button")
+   cart_btn.id = "ctbtn"
+cart_btn.innerText = "Add to cart";  
+
+cart_btn.onclick = function(){
+ addtocart(product)
+};
+
+divs.append(img, pr_name,size_name, pr_price,cart_btn);
+
+parent.append(divs);
+
+
+});
+
+}
+showProduct();
+
+ if(localStorage.getItem("Mycart") === null){
+    localStorage.setItem("Mycart", JSON.stringify([]))
+}
+
+function addtocart(p){
+let pr_cart = JSON.parse(localStorage.getItem("Mycart"))
+ pr_cart.push(p);
+
+ localStorage.setItem("Mycart",JSON.stringify(pr_cart));
+
+//  console.log(("pr_cart:",pr_cart));
+
+}
+
+
+
+</script>
+<!-- FOOTER -->
+
+        <div id="parent">
+                
+            <div id="childfirst">
+            
+            <div class="hv"><h1>We are here to help you!</h1></div>
+            <div class="a"><p id="ss">Go Mobile:</p>
+                <a href="index2.html" target="_blank">
+                <img class="Icon_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRXH4l00fsy5VAL2Y8UNFY_84jmoYEx3LYaQ&usqp=CAU">
+                </a>
+                <a href="index2.html" target="_blank">
+                <img class="Icon_img" src="https://us.123rf.com/450wm/get4net/get4net1901/get4net190112425/115432940-android.jpg?ver=6">
+                </a>
+                <a href="index2.html" target="_blank">
+                    <img class="Icon_img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEX///8AAABiYmJ4eHjc3NyOjo7Q0NDm5ub19fXX19dnZ2eoqKjg4ODKysoZGRlbW1tOTk5ycnI2NjaDg4Pq6uqbm5uSkpIdHR20tLS6urpEREQkJCRWVlY0NDS4uLhsbGwODg5GRkYqKio9PT1WnmNcAAADFElEQVR4nO3Z23LaMBRGYRQwxhDC2YEcSgjv/44thGkJqJOI7n8L3LWucoF2/I2xEabVou9137Wu08tt+lOn2AZFD+1hbtq+4ZOEd0AOcvNavZHQt+u5mxfYFft2LXIClw7AENr5gCsXYEZi6QQMIdf95t1NGMoswIUfMIyzCB2BIeT4zBi4Cl8yCF9dhWHuDpz7AsPSXfjDWThxFxbOwqm7cO0sDO7CO4S/2q667UYLX3ev+7hex1V51uz2hfv98vzvh/fSIGF8W5m2sXXV7fqGcH+Dr/d/Rp+bjW9eGMbD6nCxTYed06rEz5urFJqGECFChAgRIkSIECFChLctrAtl9VN+ofj/tBHKQmgVQl0IrUKoC6FVCHUhtAqhLoRWIdSF0CqEuhBahVAXQqsQ6kJoFUJdCK1CqAuhVQh1IbQKoS6EViHUhdAqhLoQWoVQF0KrEOpCaBVCXQitQqgLoVUIdSG0CqEuhFYh1IXQKoS6EFqFUBdCqxDqQmgVQl0IrUKoC6FVCHUhtAqhLoRWIdSF0CqEuhBahVAXQqsQ6kJoFUJdCK1CqAuhVQh1IbQKoS6EViHUhdAqhLoQWoVQF0KrEOpCaBVCXQitQqgLoVUIdSG0CqEuhFYh1IXQKoS6EFqFUNdvYdlRVvbzC71CiBAhQoT/jfBlVhf9t8YKp6vD2qr/9YtvUTg4Wl2ln8frF1aflvdeGyfsnqzvpZ7FaxfWZwO6DRNGJiTebq5cuIhMqBolvI+NeGySMDoi7W3q7EsUbqMjigYJN9ERiwYJp9ERTTqH8cMbNUlYxUYkTfAXpt0IZ5EJwysXztKOr3c+YZM04NFdOEgTrs8GLNMG3LkLE/dcn74d7rpPXB/b94lLPMITYid1ecdfmHghhjA5uhYT3+MhvPsDW2XqQYZQfJyI+eA5eenpm9yldToxhKfR+KJHbTmArfklR3phq68PR1Hi/f4f6ucBHv0+Ky7HbeaQz6P9h8iGyC2Ps7jNCfS4FmObdtd6E6lvE/3e5dy8TntollD7Gnz7ylVdWFcvM2xFb7KfOhw84BABDgQAAAAASUVORK5CYII=">
+                </a>
+                <p id="s">Follow us on:</p> 
+                <a href="index2.html" target="_blank">
+                <img class="Icon_img" src="data:image/png;base64,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">
+                </a>
+                    
+                <a href="index2.html" target="_blank">
+                    <img class="Icon_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQZK2OCr3wX28GJIv41pvXcjvLUZMpmcBgOQ&usqp=CAU">
+                </a>
+                    
+                <a href="index2.html" target="_blank">
+                    <img class="Icon_img" src="data:image/png;base64,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">
+                </a>
+                    
+            </div>
+            </div>
+            <div id="childsecond">
+            <div class="b">
+                <a href="index1.html">About Us</a><br>
+                <a href="index2.html">Join Sales</a><br>
+                <a href="index3.html">Success Stories</a><br>
+                <a href="index4.html">Pres Section</a><br>
+                <a href="index5.html">Advertise with Us</a><br>
+                <a href="index6.html">Jobs & Careers</a>
+                
+            </div>
+            <div class="b">
+                <a href="index7.html">Help</a><br>
+                <a href="index8.html">Feedback</a><br>
+                <a href="index9.html">Complaints</a><br>
+                <a href="index10.html">Customer Care</a><br>
+                <a href="index11.html">Contact Us</a>
+            </div>
+            <div class="b">
+                <a href="index12.html" style="font-weight:bold" >Suppliers Tool Kit</a><br>
+                <a href="index13.html">Sell on IndiaMART</a><br>
+                <a href="index14.html">Latest BuyLead</a><br>
+                <a href="index15.html">Learning Center</a>
+            </div>
+            <div class="b">
+                <a href="index16.html" style="font-weight:bold">Buyers Tool Kit </a><br>
+                <a href="index17.html">Post Your Requirement   </a><br>
+                <a href="index18.html">Products You Buy </a><br>
+                <a href="index19.html">Search Products & Supliers </a><br>
+                <a href="index20.html">Pay With IndiaMART </a>
+            </div>
+            <div class="b">
+                <a href="index21.html"style="font-weight:bold">Events</a><br>
+                <a href="index22.html">Trade Shows</a><br>
+                <a href="index23.html">Conferences</a><br>
+                <a href="index24.html">Events by Country</a>
+            </div>
+            
+            </div>
+            <div class="copy">
+            <p> Copiright @ 1996-2022 IndiaMART InterMESH Ltd. All rights reserved</p>
+            <p id="para">Terms of Use-privacy Policy-Link to Us</p>
+            </div>
+        </div>
+
+            
+</body>
+</html>
+<!-- JS for product Data -->
+<script src="JS/product.js"></script>
+<!-- JS for search bar -->
+<script src="JS/searchBar.js"></script>  
+<!-- product & services javascript -->
+
+
+<!-- MAPPING of product -->
+<script src="JS/product_mapping.js"></script>
+
+<!-- Slider javascript -->
+<script src="SLIDINGS_IMAGES/slider.js"></script>
