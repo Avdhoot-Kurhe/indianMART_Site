@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    .header{
+        width: 90%;
+        margin:auto;
+        display: flex;
+        background-color: blue;
+        height: 90px;
+      }
+      #searchBar{
+        display:flex;
+        background-color: white;
+        /* border: 1px solid red; */
+        border-radius: 5px;
+        width: 550px;
+        height:36px;
+        margin: 5px 10px 5px 25px;
+        margin-left: 40px;
+    }
+    #loc{
+        font-weight: bold;
+        border:none;
+        
+    }
+    #searchBar>img{
+        height: 25px;
+        width:25px;
+        padding-top: 10px;
+    }
+    #textsearch{
+        font-size: 16px;
+    }
+    #searchBtn{
+        background-color: rgb(0,166,153);
+        color:white;
+        width: 118px;
+        font-size: 18px;
+        border:none
+        /* padding-left:0px; */
+    }
+      body{
+        width: 90%;
+        margin: auto;
+      }
+      #prod{
+        margin-left: 150px;
+          width: 500px;
+          display: flex;
+          color: white;
+          justify-content: space-between;
+  
+      }
+      #prod>div{
+          margin-left:5px;
+          margin: auto;
+          text-align: center;
+      }
+      #prod>div>img{
+          height: 50px;
+          width:50px;
+      }
+      #prod>div>p{
+          font-size: 10px;
+          color: rgb(131, 51, 51);
+          text-align: center;
+          padding-top: -5px;
+      }
+      .Hd_logo{
+      background-image: url(https://utils.imimg.com/globalhf/hrd-sp-v30.png);
+      background-repeat:no-repeat;
+      height: 50px;
+      width:220px;
+      }
+      a{
+        color: white;
+        text-decoration: none;
+      }
+
+      </style>
+
+</head>
+<body>
+  <div class="header">
+    <a href="index.html" class="Hd_logo"></a>
+      <div id="searchBar">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWPIW4zsVRjJhQNkaXkmya8tq2Af6Qvg1dTw&usqp=CAU/">
+          <select id="loc">
+              <option value="all india" >All India</option>
+              <option value="delhi">Delhi</option>https://hm.imimg.com/imhome_gifs/indiamart-og1.jpg
+              <option value="mumbai">Mumbai</option>
+              <option value="kolkata">Kolkata</option>
+              <option value="bangalore">Bangalore</option>
+              <option value="indore">Indore</option>
+          </select>
+          <form id="form" style="display: flex;">
+              <input id="textsearch" type="text"  placeholder="Enter product / service to search" size="35">
+              <input type="submit" value="🔍Search" id="searchBtn"></input>
+          </form> 
+      </div>  
+      <div id="prod">
+        <div> 
+          <img src="https://cdn-icons-png.flaticon.com/512/4379/4379655.png" alt="" class="log">
+          <a href="Footer/Shoping.html"><p>IM Shoping</p></a>
+      </div>
+      <div> 
+          <img src="https://cdn-icons.flaticon.com/png/128/2811/premium/2811299.png?token=exp=1651641066~hmac=de8fad99272e3e9ba4b7111df308606a" alt="">
+          <a href="Footer/Covid Supplies.html"><p>Covid Supplies</p></a>
+      </div>
+      <div> 
+          <img src="https://cdn-icons-png.flaticon.com/512/602/602275.png" alt="">
+          <a href="Footer/sell.html"><p>Sell</p></a>
+      </div>
+      <div> 
+          <img src="https://cdn-icons.flaticon.com/png/512/471/premium/471664.png?token=exp=1651641146~hmac=262f7f68314421e457267002a3dd0ccf" alt="">
+          <a href="Footer/help.html"><p>Help</p></a>
+          
+      </div>
+      <div> 
+          <img src="https://cdn-icons-png.flaticon.com/512/2950/2950657.png" alt="">
+          <a href="Footer/msg.html"><p>Massages</p></a>
+          
+      </div>
+      <div> 
+          <img src="https://cdn-icons.flaticon.com/png/128/5655/premium/5655237.png?token=exp=1651641280~hmac=66a04f0d0aae21e7016f2b57f197e265" alt="">
+          <a href="login.html"><p>Sign In ˅</p></a>
+          
+      </div>
+      </div>
+  </div>
+</body>
+</html>
