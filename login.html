@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            background-color:white;
+        }
+        form{
+            border:1px solid gray;
+            border-radius: 10px;
+            background-color: white;
+            padding:20px;
+            height:350px;
+            width:350px;
+            margin:auto;
+            margin-top: 20px;
+            box-shadow:rgba(97, 97, 97, 0.199) 0px 19px 38px, rgba(71, 70, 70, 0.22) 0px 15px 12px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* input{
+            display:block;
+            font-size:20px;
+            margin-top:50px;
+            
+        } */
+        #heading{
+            /* margin-left:490px; */
+            margin-top:30px;
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            /* color: white; */
+        }
+        #sub{
+            height: 30px;
+            width: 80px;
+            border: 2px solid blue;
+            background-color: white;
+            color: blue;
+            border-radius: 10px;
+        }
+        .forinput{
+            height: 50px;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <h2 id="heading">LOGIN WITH MOBILE NUMBER</h2>
+    <form>
+        <input class="forinput" id="mobile" placeholder="Enter Mobile Number" type="number">
+        <input class="forinput" id ="name" placeholder="Enter Name" type="text">
+        <input class="forinput" id="password" placeholder="Create a password" >
+        <input id="sub" type="submit" value="Submit">
+    </form>
+</body>
+</html>
+<script>
+    
+    var form=document.querySelector("form");
+    form.addEventListener("submit",function(event){
+        event.preventDefault();
+
+        var mobile=document.getElementById("mobile").value;
+        var name=document.getElementById("name").value;
+        var password=document.getElementById("password").value;
+        
+        if(mobile.length!=10){
+            alert("Enter correct Mobile Number")
+            return
+        }
+        if(mobile=="" || name=="" || password==""){
+            alert("Fill Credentials Correctly")
+            return
+        }
+
+        var data={
+            MobileNumber:mobile,
+            Name:name,
+            Password:password,
+
+        }
+        
+        localStorage.setItem("userData",JSON.stringify(data))
+        window.location.href="header_&_mapping.html"
+    })
+</script>
